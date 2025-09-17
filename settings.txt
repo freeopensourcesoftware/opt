@@ -36,6 +36,18 @@ Windows Settings Tweaks
 │       ├── Enable "Smooth edges of screen fonts"
 │       ├── Enable "Show thumbnails instead of icons"
 │       └── Enable "Show window contents while dragging"
+├── [Registry Tweaks]
+│   ├── Open Regedit (search "regedit")
+│   ├── Navigate to HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games
+│   │   ├── Set GPU Priority to 8 (DWORD, Decimal)
+│   │   ├── Set Priority to 6 (DWORD, Decimal)
+│   │   ├── Set Scheduling Category to "High" (String)
+│   │   └── Set SFIO Priority to "High" (String)
+│   ├── Navigate to HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl
+│   │   └── Set Win32PrioritySeparation to 38 (DWORD, Decimal)
+│   └── Navigate to HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile
+│       ├── Set NetworkThrottlingIndex to ffffffff (DWORD, Hex) - create if not exists
+│       └── Set SystemResponsiveness to 0 (DWORD, Decimal)
 └── [Optional]
     └── Search "Notifications & actions" and turn off "Notifications"
         └── Note: The notifications service uses a lot of resources
