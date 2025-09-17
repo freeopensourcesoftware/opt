@@ -1,1 +1,7 @@
-
+AMD GPU Tweaks
+├── Search "AMD Software"
+├── Press the settings cog on the top right
+├── Go into "Preferences" tab
+│   └── Disable everything inside of it
+└── Go into "Hotkeys"
+    └── Disable everything
