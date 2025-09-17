@@ -39,15 +39,29 @@ Windows Settings Tweaks
 ├── [Registry Tweaks]
 │   ├── Open Regedit (search "regedit")
 │   ├── Navigate to HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games
-│   │   ├── Set GPU Priority to 8 (DWORD, Decimal)
-│   │   ├── Set Priority to 6 (DWORD, Decimal)
-│   │   ├── Set Scheduling Category to "High" (String)
-│   │   └── Set SFIO Priority to "High" (String)
+│   │   ├── Set GPU Priority to 8
+│   │   ├── Set Priority to 6
+│   │   ├── Set Scheduling Category to "High"
+│   │   └── Set SFIO Priority to "High"
 │   ├── Navigate to HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl
-│   │   └── Set Win32PrioritySeparation to 38 (DWORD, Decimal)
+│   │   └── Set Win32PrioritySeparation to 38
 │   └── Navigate to HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile
-│       ├── Set NetworkThrottlingIndex to ffffffff (DWORD, Hex) - create if not exists
-│       └── Set SystemResponsiveness to 0 (DWORD, Decimal)
+│       ├── Set NetworkThrottlingIndex to ffffffff (Decimal) - create if not exists
+│       └── Set SystemResponsiveness to 0
+│   ├── Navigate to HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching
+│   │   └── Set SearchOrderConfig to 0
+│   ├── Navigate to HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power
+│   │   └── Set HiberbootEnabled to 0
+│   ├── Navigate to HKLM\SOFTWARE\Microsoft\PolicyManager\default\ApplicationManagement\AllowGameDVR
+│   │   └── Set value to 0 - only if you don't use GameBar
+│   ├── Navigate to HKLM\SYSTEM\CurrentControlSet\Control\Power
+│   │   └── Set HibernateEnabled to 0
+│   ├── Navigate to HKCU\Control Panel\Desktop
+│   │   └── Set MenuShowDelay to 0
+│   ├── Navigate to HKLM\SYSTEM\CurrentControlSet\Control
+│   │   └── Set WaitToKillServiceTimeout to 2000
+│   └── Navigate to HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\943c8cb6-6f93-4227-ad87-e9a3feec08d1
+│       └── Set Attributes to 3
 └── [Optional]
     └── Search "Notifications & actions" and turn off "Notifications"
         └── Note: The notifications service uses a lot of resources
