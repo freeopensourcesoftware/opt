@@ -1,0 +1,41 @@
+Windows Settings Tweaks
+├── [Gaming Mode]
+│   ├── Turn on gaming mode (search "turn on game mode")
+│   ├── In game mode settings click on graphics
+│   └── In Graphics click "change default graphics settings"
+│       ├── Turn on "Optimizations for windowed games"
+│       └── If available, turn on "Hardware-accelerated GPU scheduling"
+├── [Security]
+│   └── Search "Windows Security" and in "Device security" turn off "Memory integrity"
+├── [Power Settings]
+│   ├── Open terminal/powershell and run: powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+│   └── Search "Edit Power Plan" and select "Ultimate Performance" from dropdown under "Hide additional plans"
+├── [Personalization]
+│   └── Open Settings > Personalization > Dynamic Lighting
+│       ├── Turn off "Use Dynamic Lighting on my devices"
+│       └── Turn off "Compatible apps in the foreground always control lighting"
+├── [Apps]
+│   ├── Open Settings > Apps > Advanced app settings
+│   │   └── Set "Share across devices" to "Off"
+│   └── (Optional) Open Settings > Apps > Startup
+│       └── Disable everything you don't need
+├── [Accessibility]
+│   └── Open Settings > Accessibility > Visual effects
+│       ├── Turn off "Animation effects"
+│       └── Turn off "Transparency effects"
+├── [Privacy & Security]
+│   └── Open Settings > Privacy & security > Windows permissions
+│       └── Disable all permissions
+├── [Windows Update]
+│   └── Open Settings > Windows Update > Advanced options
+│       ├── Disable the top 4 settings
+│       └── Click "Delivery Optimization" and turn off "Allow downloads from other devices"
+├── [System Performance]
+│   └── Search "View advanced system settings" > Advanced tab > Performance > Settings
+│       ├── Select "Adjust for best performance"
+│       ├── Enable "Smooth edges of screen fonts"
+│       ├── Enable "Show thumbnails instead of icons"
+│       └── Enable "Show window contents while dragging"
+└── [Optional]
+    └── Search "Notifications & actions" and turn off "Notifications"
+        └── Note: The notifications service uses a lot of resources
